@@ -84,6 +84,11 @@ body {
   cursor: pointer;
 }
 .section-h1-button {
+  display: flex;
+  position: relative;
+  content: "";
+  justify-content: center;
+  align-items: center;
   background-color: var(--brand-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -97,8 +102,33 @@ body {
 }
 .section-h1 {
   background-color: var(--background-theme);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/goit-markup-hw-04/images/background.jpg");
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+/* -- Z OPACITY TEŻ DZIAŁA PO DODANIU POSITION : RELATIVE DO SEKCJI H1--
+
+.section-h1::before {
+  content: "";
+  background-image: url("/goit-markup-hw-04/images/background.jpg");
+  display: flex;
+  position: absolute;
+  opacity: 0.4;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;  
+} */
+
 .section-h1-style {
+  display: flex;
   font-weight: 900;
   color: #ffffff;
   font-size: 44px;
@@ -190,7 +220,7 @@ ul {
 }
 .navigation-list {
   display: flex;
-  }
+}
 .header-contact {
   display: flex;
   margin-left: auto;
@@ -203,8 +233,8 @@ ul {
   margin-left: 50px;
 }
 .section {
-  padding: 94px;
-  padding-bottom: px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section-h1 {
   padding-bottom: 0px;
@@ -329,4 +359,25 @@ ul {
 .figure-box p {
   margin-left: 24px;
   margin-bottom: 20px;
+}
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-list-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  
 }
