@@ -283,13 +283,13 @@ ul {
 .section2-list {
   display: flex;
 }
-.section2-list .list {
+.section2-list > .list {
   margin-right: 30px;
 }
 .section2-list-box {
   margin: 0;
   width: 270px;
-  height: 368px;
+  height: 428px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -363,7 +363,7 @@ ul {
 .social-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .social-list-link {
   display: flex;
@@ -373,11 +373,88 @@ ul {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  
 }
+.social-list-link:hover,
+.social-list-link:focus {
+  fill: #ffffff;
+  background-color: var(--brand-color);
+  cursor: pointer;
+}
+
+/* 
+NIE WIEM DLACZEGO WYPEŁNIENIE KOLOREM BIAŁYM PRZY HOVER NIE DZIAŁA
+KIEDY PODSTAWOWY KOLOR GRAFIKI USTAWIĘ NA SZARY
+*/
 .social-icon {
   width: 20px;
   height: 20px;
   display: flex;
-  
+  /* fill: #afb1b8; */
+}
+.list-job {
+  margin-bottom: 16px;
+}
+.clients-h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.client-list-item {
+  display: flex;
+}
+.client-list-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.client-list-link:hover {
+  fill:var(--brand-color);
+  border: 1px solid var(--brand-color)
+}
+.client-icon {
+  width: 106px;
+  height: 60px;
+  /* fill:  #AFB1B8; */
+}
+
+/* TUTAJ TEN SAM PROBLEM
+HOVER NIE DZIAŁA, JEŚLI ZMIENIĘ PODSTAWOWY KOLOR IKON NA SZARY */
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-join-us {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+}
+.footer-container {
+  display: flex;
+}
+.footer-join {
+  display: flex;
+  margin-left: 70px;
+  flex-direction: column;
+}
+.social-list-link-dark {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  fill: #ffffff
+}
+.social-list-link-dark:hover {
+  background-color:#2196f3
 }
