@@ -33,6 +33,16 @@ body {
   color: var(--brand-color);
 }
 .contact-links {
+  display: flex;
+  flex-direction: row-reverse;
+  color: var(--secondary-font-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02;
+}
+.contact-links-footer {
+  display: flex;
   color: var(--secondary-font-color);
   font-weight: 500;
   font-size: 14px;
@@ -42,6 +52,9 @@ body {
 .contact-links:hover,
 .contact-links:focus {
   color: var(--brand-color);
+}
+.contact-icon-header {
+  margin-right: 10px;
 }
 .adress {
   color: #ffffff;
@@ -109,23 +122,10 @@ body {
     url("/goit-markup-hw-04/images/background.jpg");
   display: flex;
   justify-content: center;
-  background-size: cover;
+  background-size: 1600px cover;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
-
-/* -- Z OPACITY TEŻ DZIAŁA PO DODANIU POSITION : RELATIVE DO SEKCJI H1--
-
-.section-h1::before {
-  content: "";
-  background-image: url("/goit-markup-hw-04/images/background.jpg");
-  display: flex;
-  position: absolute;
-  opacity: 0.4;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;  
-} */
 
 .section-h1-style {
   display: flex;
@@ -226,6 +226,9 @@ ul {
   margin-left: auto;
   margin-right: 12px;
 }
+.header-contact-item {
+  display: flex;
+}
 .navigation-list-item:not(:last-child) {
   margin-right: 46px;
 }
@@ -263,9 +266,10 @@ ul {
 .text-index {
   display: flex;
 }
-.text-index .list {
+.text-index:not(:last-child) {
   margin-right: 30px;
 }
+
 .section1-h2 {
   margin-left: 424px;
   margin-bottom: 50px;
@@ -352,6 +356,11 @@ ul {
 .figure-box {
   margin: 0;
 }
+.figure-box:hover,
+.figure-box:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .figure-box .img-title {
   margin-left: 24px;
   padding-top: 20px;
@@ -363,7 +372,7 @@ ul {
 .social-list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .social-list-link {
   display: flex;
@@ -391,6 +400,35 @@ KIEDY PODSTAWOWY KOLOR GRAFIKI USTAWIĘ NA SZARY
   display: flex;
   /* fill: #afb1b8; */
 }
+.lorem-section {
+  flex-direction: column;
+}
+.lorem-icons {
+  display: flex;
+}
+/* NIE OGARNIAM JAK USTAWIĆ WYBIÓRCZE CZĘŚCI IKON NA NIEBIESKO */
+.lorem-icon {
+  width: 70px;
+  height: 70px;
+}
+.lorem-icon-box {
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lorem-icon-box:not(:last-child) {
+  margin-right: 30px;
+}
+.lorem-text-box {
+  width: 270px;
+  margin-top: 30px;
+}
+.lorem-text-box:not(:last-child) {
+  margin-right: 30px;
+}
 .list-job {
   margin-bottom: 16px;
 }
@@ -416,8 +454,8 @@ KIEDY PODSTAWOWY KOLOR GRAFIKI USTAWIĘ NA SZARY
   justify-content: center;
 }
 .client-list-link:hover {
-  fill:var(--brand-color);
-  border: 1px solid var(--brand-color)
+  fill: var(--brand-color);
+  border: 1px solid var(--brand-color);
 }
 .client-icon {
   width: 106px;
@@ -444,6 +482,8 @@ HOVER NIE DZIAŁA, JEŚLI ZMIENIĘ PODSTAWOWY KOLOR IKON NA SZARY */
   display: flex;
   margin-left: 70px;
   flex-direction: column;
+  width: 206px;
+  height: 80px;
 }
 .social-list-link-dark {
   display: flex;
@@ -453,8 +493,13 @@ HOVER NIE DZIAŁA, JEŚLI ZMIENIĘ PODSTAWOWY KOLOR IKON NA SZARY */
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  fill: #ffffff
+  fill: #ffffff;
 }
 .social-list-link-dark:hover {
-  background-color:#2196f3
+  background-color: #2196f3;
+}
+.social-list-dark {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

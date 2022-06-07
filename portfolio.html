@@ -19,43 +19,63 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="container">
-        <h3 class="navigation">
-          <a href="/goit-markup-hw-04/index.html"
-            ><span class="navigation-web">Web</span>Studio</a
-          >
-        </h3>
-        <nav>
-          <ul class="navigation-list">
-            <li class="list navigation-list-item">
-              <a href="/goit-markup-hw-03/index.html" class="nav-links"
-                >Agencja</a
-              >
+
+    <!-- <--------H E A D E R--------> 
+
+      <header class="header">
+        <div class="container">
+          <h3 class="navigation">
+            <a href="/goit-markup-hw-04/index.html"
+              ><span class="navigation-web">Web</span>Studio</a
+            >
+          </h3>
+  
+        <!-- <--------N A V I G A T I O N-------->
+  
+          <nav>
+            <ul class="navigation-list">
+              <li class="list navigation-list-item">
+                <a href="/goit-markup-hw-03/index.html" class="nav-links"
+                  >Agencja</a
+                >
+              </li>
+              <li class="list navigation-list-item">
+                <a href="/goit-markup-hw-04/portfolio.html" class="nav-links"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="list navigation-list-item">
+                <a href="" class="nav-links">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <!-- <--------H E A D E R   C O N T A C T-------->
+  
+          <ul class="header-contact">
+            <li class="list">
+              <a href="mailto:info@devstudio.com" class="contact-links"
+                >info@devstudio.com
+                <svg class="" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+              </a>
             </li>
-            <li class="list navigation-list-item">
-              <a href="/goit-markup-hw-03/portfolio.html" class="nav-links"
-                >Portfolio</a
-              >
-            </li>
-            <li class="list navigation-list-item">
-              <a href="" class="nav-links">Kontakt</a>
+            <li class="list">
+              <a href="tel:+48111111111" class="contact-links"
+                >+48 111 111 111
+                <svg class="" width="16" height="10">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="header-contact">
-          <li class="list">
-            <a href="mailto:info@devstudio.com" class="contact-links"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="list">
-            <a href="tel:+48111111111" class="contact-links">+48 111 111 111</a>
-          </li>
-        </ul>
-      </div>
-    </header>
+        </div>
+      </header>
     <main>
+
+<!-- <--------B U T T O N S-------->
+
       <section class="section section-buttons">
         <div class="container">
           <ul class="section-buttons-list">
@@ -77,6 +97,9 @@
           </ul>
         </div>
       </section>
+
+      <!-- <--------C A R D S   W R A P-------->
+
       <section class="section wrap">
         <div class="container">
           <ul class="wrap-list">
@@ -217,24 +240,66 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <h3 class="footer-logo">
-          <a href="/goit-markup-hw-03/index.html" class="footer-navigation">
-            <span class="navigation-web">Web</span>Studio</a
-          >
-        </h3>
-        <adress class="footer-adress">
-          <p class="adress">m. Warszawa, Aleje Jerozolimskie 21</p>
-          <a class="contact-links" href="mailto:info@example.com"
-            >info@example.com</a
-          >
-          <br />
-          <a class="contact-links" href="tel:+48 111 111 111"
-            >+48 111 111 111</a
-          >
-        </adress>
-      </div>
-    </footer>
+
+<!-- <--------F O O T E R-------->
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>
+      <h3 class="footer-logo">
+        <a href="/goit-markup-hw-04/index.html" class="footer-navigation">
+          <span class="navigation-web">Web</span>Studio</a
+        >
+      </h3>
+      <adress class="footer-adress">
+        <p class="adress">m. Warszawa, Aleje Jerozolimskie 21</p>
+        <a class="contact-links-footer" href="mailto:info@example.com"
+          >info@example.com</a
+        >
+        <br />
+        <a class="contact-links-footer" href="tel:+48 111 111 111"
+          >+48 111 111 111</a
+        >
+      </adress>
+    </div>
+      <div class="footer-join">
+        <p class="footer-join-us">DOŁĄCZ DO NAS</p> 
+        <ul class="social-list-dark list">
+          <li class="social-list-item">
+            <a class="social-list-link-dark" href="#">
+              <svg class="social-icon">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+              <icons class="svg" id="icon-instagram"></icons
+            ></a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link-dark" href="#">
+              <svg class="social-icon">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+              <icons class="svg" id="icon-instagram"></icons
+            ></a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link-dark" href="#">
+              <svg class="social-icon">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+              <icons class="svg" id="icon-instagram"></icons
+            ></a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link-dark" href="#">
+              <svg class="social-icon">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+              <icons class="svg" id="icon-instagram"></icons
+            ></a>
+          </li>
+        </ul>
+
+    </div>
+  </footer>
   </body>
 </html>
