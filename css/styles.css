@@ -40,6 +40,7 @@ body {
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02;
+  fill: #757575;
 }
 .contact-links-footer {
   display: flex;
@@ -52,9 +53,11 @@ body {
 .contact-links:hover,
 .contact-links:focus {
   color: var(--brand-color);
+  fill: var(--brand-color);
 }
 .contact-icon-header {
   margin-right: 10px;
+
 }
 .adress {
   color: #ffffff;
@@ -122,7 +125,7 @@ body {
     url("/goit-markup-hw-04/images/background.jpg");
   display: flex;
   justify-content: center;
-  background-size: 1600px cover;
+  background-size: 1600px auto;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -378,6 +381,7 @@ ul {
   display: flex;
   width: 44px;
   height: 44px;
+  fill: #AFB1B8;
   background-color: #fff;
   border-radius: 50%;
   align-items: center;
@@ -390,15 +394,11 @@ ul {
   cursor: pointer;
 }
 
-/* 
-NIE WIEM DLACZEGO WYPEŁNIENIE KOLOREM BIAŁYM PRZY HOVER NIE DZIAŁA
-KIEDY PODSTAWOWY KOLOR GRAFIKI USTAWIĘ NA SZARY
-*/
 .social-icon {
   width: 20px;
   height: 20px;
   display: flex;
-  /* fill: #afb1b8; */
+  
 }
 .lorem-section {
   flex-direction: column;
@@ -406,7 +406,7 @@ KIEDY PODSTAWOWY KOLOR GRAFIKI USTAWIĘ NA SZARY
 .lorem-icons {
   display: flex;
 }
-/* NIE OGARNIAM JAK USTAWIĆ WYBIÓRCZE CZĘŚCI IKON NA NIEBIESKO */
+
 .lorem-icon {
   width: 70px;
   height: 70px;
@@ -452,6 +452,7 @@ KIEDY PODSTAWOWY KOLOR GRAFIKI USTAWIĘ NA SZARY
   border-radius: 4px;
   align-items: center;
   justify-content: center;
+  fill: #AFB1B8;
 }
 .client-list-link:hover {
   fill: var(--brand-color);
@@ -460,11 +461,9 @@ KIEDY PODSTAWOWY KOLOR GRAFIKI USTAWIĘ NA SZARY
 .client-icon {
   width: 106px;
   height: 60px;
-  /* fill:  #AFB1B8; */
 }
 
-/* TUTAJ TEN SAM PROBLEM
-HOVER NIE DZIAŁA, JEŚLI ZMIENIĘ PODSTAWOWY KOLOR IKON NA SZARY */
+
 
 .client-list {
   display: flex;
@@ -493,13 +492,23 @@ HOVER NIE DZIAŁA, JEŚLI ZMIENIĘ PODSTAWOWY KOLOR IKON NA SZARY */
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  fill: #ffffff;
+  color: #ffffff
 }
 .social-list-link-dark:hover {
   background-color: #2196f3;
+  color: #ffffff;
+  fill: #ffffff;
 }
 .social-list-dark {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.social-icon-dark {
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+.social-icon-dark {
+  fill: currentcolor;
 }
