@@ -128,6 +128,8 @@ body {
   background-size: 1600px auto;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .section-h1-style {
